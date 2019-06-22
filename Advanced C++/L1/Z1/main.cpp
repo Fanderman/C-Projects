@@ -1,42 +1,45 @@
 #include <iostream>
-#include <cmath>
 #include <string>
+#include <vector>
+
 using namespace std;
 
-int main()
+const vector<pair<int, string>> rzym = {
+    {1000, "M"},
+    {900, "CM"}, {500, "D"}, {400, "CD"}, {100, "C"},
+    {90, "XC"}, {50, "L"}, {40, "XL"}, {10, "X"},
+    {9, "IX"}, {5, "V"}, {4, "IV"}, {1, "I"}};
+
+string bin2rzym (int x){
+    int i = 0;
+    string s = "";
+    while(x > 0)
+    {
+        if( (x - rzym[i].first) >= 0){
+            x -= rzym[i].first;
+            s += rzym[i].second;
+        }
+        else i++;
+    }
+    return s;
+}
+
+int main(int argc, char *argv[])
 {
-    double bok[3];
-    string S;
-    clog << "wpisz boki: " << endl;
-    for(int i = 0; i != 3; i++){
-        cin >> S;
+    int x;
+    for(int i=1; i < argc; i++){
         try{
-            bok[i] = stod(S);
+            x = stoi(argv[i]);
+            if(x <= 0 || x >= 4000)
+                throw out_of_range("wartosc poza zasiegiem");
+            cout << bin2rzym(x) << endl;
         }
         catch( invalid_argument e1){
-            throw(logic_error("nie podano liczby"));
+            //throw(logic_error("nie podano liczby"));
         }
         catch( out_of_range e2){
-            throw(logic_error("wartosci poza zasiegiem"));
+            //throw(logic_error("wartosc poza zasiegiem"));
         }
-    }
-    bool cont = 1;
-    for(int i = 0; i != 3; i++){
-        if(cont && bok[i] < 0){
-            cont = 0;
-            cerr << "Boki nie moga byc ujemne";
-        }
-        if(cont && bok[i] >= bok[(i+1)%3] + bok[(i+2)%3]){
-            cont = 0;
-            cerr << "Trojkat musi miec poprawne dlugosci";
-        }
-    }
-    if(cont){
-        double s = (bok[0] + bok[1] + bok[2])/2;
-        double P = sqrt(s*(s-bok[0])*(s-bok[1])*(s-bok[2]));
-        long PP = P*1000;
-        clog << "Pole wynosi: ";
-        cout << (double)(PP)/1000 << endl;
     }
     return 0;
 }

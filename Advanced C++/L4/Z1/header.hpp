@@ -1,68 +1,42 @@
 #include <iostream>
 #include <vector>
+#include <initializer_list>
 #include <cmath>
-#include <string>
 using namespace std;
 
-class Queue{
-    private:
-    string *que = nullptr;
-    int length;
-    int start;
-    int amount;
-    //bool exists = false;
+class polynomial{
 
-    public:
+private:
+    int n;
+    double *a = nullptr;
 
-    Queue(int length){
-        this -> length = length;
-        this -> start = 0;
-        this -> amount = 0;
-        //this -> exists = true;
-        que = new string[length];
-    }
+public:
+    polynomial (int st=0, double wsp=1.0); // konstruktor tworzący jednomian
+    polynomial (int st, const double wsp[]); // konstruktor tworzący wielomian
+    polynomial (std::initializer_list<double> wsp); // lista współczynników
+    polynomial (const polynomial &w); // konstruktor kopiujący
+    polynomial (polynomial &&w); // konstruktor przenoszący
+    polynomial& operator = (const polynomial &w); // przypisanie kopiujące
+    polynomial& operator = (polynomial &&w); // przypisanie przenoszące
+    ~polynomial (); // destruktor
 
-    Queue() : Queue(1){}
+    int size() const;
+    double get (int i) const;
+    void set (int i, double l);
 
-    Queue(Queue &k){
-        this -> length = k.length;
-        this -> start = k.start;
-        this -> amount = k.amount;
-        if(this -> que != nullptr)
-            delete [] que;
-        //this -> exists = true;
-        que = new string[length];
-        for(int i=0; i<length; i++){
-            que[i]=k.que[i];
-        }
-    }
+    friend istream& operator >> (istream &we, polynomial &w);
+    friend ostream& operator << (ostream &wy, const polynomial &w);
 
-    Queue &operator=(Queue &k){
-        this -> length = k.length;
-        this -> start = k.start;
-        this -> amount = k.amount;
-        if(this -> que != nullptr)
-            delete [] que;
-        //this -> exists = true;
-        que = new string[k.length];
-        for(int i=0; i<length; i++){
-            que[i]=k.que[i];
-        }
-    }
+    friend polynomial operator + (const polynomial &u, const polynomial &v);
+    friend polynomial operator - (const polynomial &u, const polynomial &v);
+    friend polynomial operator * (const polynomial &u, const polynomial &v);
+    friend polynomial operator * (const polynomial &u, double c);
+    friend polynomial operator * (double c,const polynomial &u);
+    polynomial& operator += (const polynomial &v);
+    polynomial& operator -= (const polynomial &v);
+    polynomial& operator *= (const polynomial &v);
+    polynomial& operator *= (double c);
+    double operator () (double x) const; // obliczenie wartości wielomianu dla x
+    double operator [] (int i) const; // odczytanie i-tego współczynnika
 
-    Queue (Queue &&k) : length(k.length),start(k.start), amount(k.amount), que(k.que){
-        k.que = nullptr;
-    }
-
-    ~Queue(){
-        delete [] que;
-    }
-
-    void put(string s);
-
-    string take();
-
-    string check();
-
-    int size();
 };
