@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1554392475 source:c:\users\jacek\onedrive\c kurs\l5\z1\main.cpp
+	"header.hpp"
+
+1554392327 c:\users\jacek\onedrive\c kurs\l5\z1\header.hpp
+	<iostream>
+	<vector>
+	<initializer_list>
+	<cmath>
+
+1554392341 source:c:\users\jacek\onedrive\c kurs\l5\z1\polynomials.cpp
+	"header.hpp"
+

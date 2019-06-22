@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/jacek/OneDrive/C kurs/L5/header.h
+iostream
+-
+vector
+-
+initializer_list
+-
+
+C:/Users/jacek/OneDrive/C kurs/L5/polynomials.cpp
+header.h
+C:/Users/jacek/OneDrive/C kurs/L5/header.h
+

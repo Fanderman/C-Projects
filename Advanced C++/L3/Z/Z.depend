@@ -1,0 +1,15 @@
+# depslib dependency file v1.0
+1552056778 source:c:\users\jacek\onedrive\c kurs\l3\z\objects.cpp
+	"header.h"
+
+1553172454 source:c:\users\jacek\onedrive\c kurs\l3\z\main.cpp
+	"header.h"
+
+1552057264 c:\users\jacek\onedrive\c kurs\l3\z\header.h
+	<iostream>
+	<vector>
+	<cmath>
+
+1552056743 c:\users\jacek\onedrive\c kurs\l3\z\objects.cpp
+	"header.h"
+

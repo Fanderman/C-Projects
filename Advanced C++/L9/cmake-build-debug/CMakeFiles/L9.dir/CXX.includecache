@@ -1,0 +1,44 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/jacek/OneDrive/C kurs/L9/basic.cpp
+header.h
+C:/Users/jacek/OneDrive/C kurs/L9/header.h
+
+C:/Users/jacek/OneDrive/C kurs/L9/binary.cpp
+header.h
+C:/Users/jacek/OneDrive/C kurs/L9/header.h
+
+C:/Users/jacek/OneDrive/C kurs/L9/header.h
+iostream
+-
+string
+-
+queue
+-
+stack
+-
+tuple
+-
+map
+-
+cmath
+-
+
+C:/Users/jacek/OneDrive/C kurs/L9/main.cpp
+header.h
+C:/Users/jacek/OneDrive/C kurs/L9/header.h
+
+C:/Users/jacek/OneDrive/C kurs/L9/parse.cpp
+header.h
+C:/Users/jacek/OneDrive/C kurs/L9/header.h
+
+C:/Users/jacek/OneDrive/C kurs/L9/unary.cpp
+header.h
+C:/Users/jacek/OneDrive/C kurs/L9/header.h
+

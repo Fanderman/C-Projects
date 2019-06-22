@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/jacek/OneDrive/C kurs/L7/header.h
+iostream
+-
+vector
+-
+cmath
+-
+string
+-
+
+C:/Users/jacek/OneDrive/C kurs/L7/main.cpp
+header.h
+C:/Users/jacek/OneDrive/C kurs/L7/header.h
+

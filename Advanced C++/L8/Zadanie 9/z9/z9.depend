@@ -1,0 +1,32 @@
+# depslib dependency file v1.0
+1559231986 source:c:\users\jacek\onedrive\c kurs\l8\zadanie 9\z9\main.cpp
+	"manipulators.hpp"
+	"test.hpp"
+
+1559166458 c:\users\jacek\onedrive\c kurs\l8\zadanie 9\z9\manipulators.hpp
+	<iostream>
+
+1559166458 c:\users\jacek\onedrive\c kurs\l8\zadanie 9\z9\test.hpp
+	<string>
+	<vector>
+
+1559166457 source:c:\users\jacek\onedrive\c kurs\l8\zadanie 9\z9\manipulators.cpp
+	"manipulators.hpp"
+	<stdexcept>
+
+1559166457 source:c:\users\jacek\onedrive\c kurs\l8\zadanie 9\z9\input.cpp
+	"input.hpp"
+	<stdexcept>
+
+1559166457 c:\users\jacek\onedrive\c kurs\l8\zadanie 9\z9\input.hpp
+	<string>
+	<fstream>
+
+1559166458 source:c:\users\jacek\onedrive\c kurs\l8\zadanie 9\z9\test.cpp
+	"test.hpp"
+	"manipulators.hpp"
+	"input.hpp"
+	<fstream>
+	<iostream>
+	<algorithm>
+

@@ -1,0 +1,3 @@
+C:/Users/jacek/OneDrive/C kurs/L9/cmake-build-debug/CMakeFiles/L9.dir
+C:/Users/jacek/OneDrive/C kurs/L9/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/jacek/OneDrive/C kurs/L9/cmake-build-debug/CMakeFiles/rebuild_cache.dir

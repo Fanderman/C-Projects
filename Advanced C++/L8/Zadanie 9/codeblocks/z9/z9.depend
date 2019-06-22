@@ -1,0 +1,25 @@
+# depslib dependency file v1.0
+1559836366 source:c:\users\jacek\onedrive\c kurs\l8\zadanie 9\codeblocks\z9\basic.cpp
+	"header.h"
+
+1559836350 c:\users\jacek\onedrive\c kurs\l8\zadanie 9\codeblocks\z9\header.h
+	<iostream>
+	<string>
+	<queue>
+	<stack>
+	<tuple>
+	<map>
+	<cmath>
+
+1559836356 source:c:\users\jacek\onedrive\c kurs\l8\zadanie 9\codeblocks\z9\binary.cpp
+	"header.h"
+
+1559836341 source:c:\users\jacek\onedrive\c kurs\l8\zadanie 9\codeblocks\z9\main.cpp
+	"header.h"
+
+1559836330 source:c:\users\jacek\onedrive\c kurs\l8\zadanie 9\codeblocks\z9\parse.cpp
+	"header.h"
+
+1559836322 source:c:\users\jacek\onedrive\c kurs\l8\zadanie 9\codeblocks\z9\unary.cpp
+	"header.h"
+

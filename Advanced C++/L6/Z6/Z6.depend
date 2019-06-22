@@ -1,0 +1,20 @@
+# depslib dependency file v1.0
+1556204524 source:c:\users\jacek\onedrive\c kurs\l6\z6\main.cpp
+	"header.h"
+
+1556208956 c:\users\jacek\onedrive\c kurs\l6\z6\header.h
+	<iostream>
+	<vector>
+	<cmath>
+	<string>
+	<utility>
+
+1556207004 source:c:\users\jacek\onedrive\c kurs\l6\z6\expression.cpp
+	"header.h"
+
+1556206878 source:c:\users\jacek\onedrive\c kurs\l6\z6\constant.cpp
+	"header.h"
+
+1556207604 source:c:\users\jacek\onedrive\c kurs\l6\z6\number.cpp
+	"header.h"
+
